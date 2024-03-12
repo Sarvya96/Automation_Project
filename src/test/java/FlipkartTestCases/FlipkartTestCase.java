@@ -1,9 +1,10 @@
-package Com.cs.tests;
+package FlipkartTestCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.cs.pages.FlipkartHomePage;
+import BaseTestForAll.BaseTest;
+import FlipkartPages.FlipkartHomePage;
 
 public final class FlipkartTestCase extends BaseTest{
 	private  FlipkartTestCase()		{}

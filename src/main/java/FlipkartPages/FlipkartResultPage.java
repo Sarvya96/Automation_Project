@@ -1,4 +1,4 @@
-package com.cs.pages;
+package FlipkartPages;
 
 import org.openqa.selenium.By;
 

@@ -25,7 +25,7 @@ public class ActiTimeLoginPage {
 		return this;
 	}
 	
-	public ActiTimeHomePage clinOnLoginBtn()
+	public ActiTimeHomePage clickOnLoginBtn()
 	{
 		DriverManager.getDriver().findElement(LoginBtn).click();
 		return new ActiTimeHomePage();

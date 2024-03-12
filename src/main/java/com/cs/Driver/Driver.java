@@ -20,7 +20,7 @@ public final class Driver
 			
 			//DriverManager.getDriver().get("https://www.google.com/");
 			DriverManager.getDriver().manage().window().maximize();
-			DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+			DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
 		} 
 	}
 	public static void quitDriver()

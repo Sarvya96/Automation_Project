@@ -1,4 +1,4 @@
-package Com.cs.tests;
+package BaseTestForAll;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

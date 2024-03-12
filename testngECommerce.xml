@@ -3,13 +3,13 @@
 <suite name="Suite">
   <test thread-count="2" name="Test" parallel="methods">
     <classes>
- 	   <!--<class name="Com.cs.tests.FlipkartTest"/>
-       <class name="Com.cs.tests.HomePageTests"/> 
-       <class name="Com.cs.tests.FlipkartTestCase"/> -->     
-      
-       <class name="Com.cs.tests.UserCreationTestCase"/>
-      
-       
+ 	        <!--<class name="Com.cs.tests.FlipkartTest"/>
+            <class name="Com.cs.tests.HomePageTests"/> 
+            <class name="Com.cs.tests.FlipkartTestCase"/>
+            -->     
+             <class name="ActiTimeTestCases.CustomerDeletionTest"/>
+           
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+ 

@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
 
 import com.cs.Driver.DriverManager;
 
+import BaseTestForAll.BaseTest;
+
 public final class HomePageTests extends BaseTest {
 	private HomePageTests()   {}
 	@Test
