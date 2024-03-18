@@ -15,15 +15,16 @@ public class TaskDeletionTest extends BaseTest {
 		ActiTimeLoginPage atlp = new ActiTimeLoginPage();
 		
 		String actMsg = atlp.enterName("Manager").enterpassword("manager").clickOnLoginBtn()
-										.clickOnTasksOption().clickOnTaskCheckBoxBtn().clickOnDeleteSelectedTaskBtn()
-										.clickOnDeleteTaskBtn().getTaskDeletionSuccessMsg();
+										.clickOnTasksOption().clickOnTaskName("Create Logout Feature")
+											.clickOnDeleteThisTaskBtn().clickOnDeleteTaskBtn()
+													.getTaskDeletionSuccessMsg();
 											
 		
 		
 		
 		System.out.println("Cnf Msg :- "+ actMsg);
 		
-		String expMsg = "Selected tasks have been successfully deleted.";
+		String expMsg = "Task has been successfully deleted.";
 		Assert.assertEquals(actMsg, expMsg,"Actual result not matched with Expected");
 	}
 }
