@@ -2,13 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="2" name="Test" parallel="methods">
-    <classes>
- 	        <!--<class name="Com.cs.tests.FlipkartTest"/>
-            <class name="Com.cs.tests.HomePageTests"/> 
-            <class name="Com.cs.tests.FlipkartTestCase"/>
-            -->     
-             <class name="ActiTimeTestCases.CustomerDeletionTest"/>
-           
+    <classes>	    
+		 	     <class name="ActiTimeTestCases.UserCreationTest"/>
+		 	     <class name="ActiTimeTestCases.DepartmentCreationTest"/>
+		 	     <class name="ActiTimeTestCases.CustomerCreationTest"/>
+		 	     <class name="ActiTimeTestCases.ProjectCreationTest"/>
+		 	      <class name="ActiTimeTestCases.TaskCreationTest"/>
+		 	      <class name="ActiTimeTestCases.TaskDeletionTest"/>
+		 	     <class name="ActiTimeTestCases.ProjectDeletionTest"/>
+		 	     <class name="ActiTimeTestCases.CustomerDeletionTest"/>
+		 	   	 <class name="ActiTimeTestCases.UserDeletionTest"/>	 	    
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
