@@ -33,13 +33,10 @@ public class UserDeletionTest extends BaseTest {
  */	
 	
 		
-		String actMsg = atlp.enterName("admin")
+		String actMsg = atlp.enterName("Manager")
 								.enterpassword("manager")
-									.clickOnLoginBtn().clickOnUser()
-									   .clickOnCreateNewUser().enterUname("King").enterPwd("123")
-									   			.enterReTypePwd("123").enterFname("virat").enterLname("kohli")
-									   				.entermailId("vk@gmail.com").selectDept().clickOnCreateUserBtn()
-									   						.clickOnUser().clickOnDeleteUser().alrtAccept().deleteUsermsg();
+									.clickOnLoginBtn().clickOnUserHeaderBtn()
+									   	.clickOnUser("Tulangekar, Sarvesh (Sarvya)").clickOnDeleteUser().alrtAccept().deleteUsermsg();
 				
 	/*
 				System.out.println("Actual Msg : "+actMsg);
