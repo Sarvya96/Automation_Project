@@ -7,22 +7,22 @@ import com.cs.pages.ActiTimeLoginPage;
 
 import BaseTestForAll.BaseTest;
 
-public class ProjectDeletionTest extends BaseTest{
+public class ProjectCreationTest extends BaseTest{
 
-	@Test
-	public void projectdeletion() throws InterruptedException
+	@Test 
+	public void createProject()
 	{
-		ActiTimeLoginPage atlp = new ActiTimeLoginPage();
+			ActiTimeLoginPage atlp = new ActiTimeLoginPage();
 		
-		String actMsg = atlp.enterName("Manager").enterpassword("manager").clickOnLoginBtn().
-						clickOnTasksOption().clickOnProjectBtn()
-						.clickOnProjectName("Gaming Application").clickOnDeleteThisProjectBtn()
-						.clickOnDeleteProjectBtn().getProjectDeletionSuccessMsg();
+		String actMsg = atlp.enterName("Manager").enterpassword("manager")
+											.clickOnLoginBtn().clickOnTasksOption()
+												.clickOnProjectBtn().clickOnCreateProject()
+												.selectCustomer().enterProjectname("Gaming Application").clickOnCreateProject()
+												.getProjectCreationSuccessMsg();
 		
-		System.out.println("Confirmation Msg :- "+ actMsg);
-		
-		//Validation Of Test Case
-		String expMsg = "Project has been successfully deleted.";
-		Assert.assertEquals(actMsg, expMsg,"Actual msg does not matched with expected msg");
+		String expMsg = "Project \"Gaming Application\" has been successfully created.";
+		System.out.println("Cnf Msg :- "+ expMsg);
+		Assert.assertEquals(actMsg, expMsg,"Actual msg does not match with expected msg");
+				
 	}
 }
