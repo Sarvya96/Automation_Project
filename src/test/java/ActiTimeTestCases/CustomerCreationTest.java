@@ -17,7 +17,7 @@ public class CustomerCreationTest extends BaseTest{
 		String actMsg = atlp.enterName("Manager").enterpassword("manager")
 											.clickOnLoginBtn().clickOnTasksOption()
 												.clickOnProjectBtn().clickOnCreateCustomer()
-												.enterCustomerName("Infosys20").clickOnCreateCustomerbtn().getCustomerCreationSuccessMsg();
+												.enterCustomerName("Infosys").clickOnCreateCustomerbtn().getCustomerCreationSuccessMsg();
 													
 		
 	
