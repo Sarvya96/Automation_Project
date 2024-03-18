@@ -15,15 +15,15 @@ public class CustomerDeletionTest extends BaseTest{
 		ActiTimeLoginPage atlp = new ActiTimeLoginPage();
 		
 		String actMsg = atlp.enterName("Manager").enterpassword("manager")
-								.clickOnLoginBtn().clickOnTasksOption()
-									.clickOnProjectBtn().clickOnCustomerCheckBox()
-										.clickOnDeleteBtn().clickOnDeleteCustomerBtn()
-											.CustomerDeletionSuccessMsg();
+										.clickOnLoginBtn().clickOnTasksOption()
+												.clickOnProjectBtn().clickOnCustomerName("Infosys")
+													.clickOnDeleteThisCustomerBtn().clickOnDeleteCustomerBtn()
+														.CustomerDeletionSuccessMsg();
 		
 		System.out.println("Confirmation Msg :- "+ actMsg);
 		
 		//Validation of Test Case
-		String expMsg = "Selected customers have been successfully deleted.";
+		String expMsg = "Customer has been successfully deleted.";
 		Assert.assertEquals(actMsg, expMsg,"Actual msg does not matched with expected msg");
 		
 		
