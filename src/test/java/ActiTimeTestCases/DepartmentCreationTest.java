@@ -15,15 +15,15 @@ public class DepartmentCreationTest extends BaseTest{
 		ActiTimeLoginPage atp = new ActiTimeLoginPage();
 		
 		String actualText = atp.enterName("admin").enterpassword("manager")
-									.clickOnLoginBtn().clickOnUser()
-										.clickOnManageDept()
-											.enterOnDeptTextField("Support").clickOnAddBtn().cnfDeptMsg();
+									.clickOnLoginBtn().clickOnUserHeaderBtn()
+										.clickOnManageDept().enterOnDeptTextField("Support")
+										.clickOnAddBtn().cnfDeptMsg();
 		
 		
 		//Validation Of Test Case
 		String expText = "Support";
 		System.out.println("Text :- "+ expText);
-		Assert.assertEquals(actualText, expText,"Actual Text is not Matching with the Expected");
+		Assert.assertEquals(actualText, expText,"Actual Text is not Matching with the Expected Text");
 		
 	}
 	
